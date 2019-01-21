@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="dist/css/bootstrap.css" type="text/css">
+
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="dist/img/favicon.png">
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://use.typekit.net/cnl8twt.css">
+  <link rel="stylesheet" href="https://use.typekit.net/cnl8twt.css">
+  <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+  <link rel="stylesheet" href="dist/css/ionicons.css" type="text/css">
+  <link rel="stylesheet" href="dist/css/flaticon.css" type="text/css">
+
+  <!-- style css -->
+  <link rel="stylesheet" href="dist/css/style.css" type="text/css">
+  <link rel="stylesheet" href="dist/css/page.css" type="text/css">
+
+  <title>Katallassos - A Standard Framework for Finance</title>
+</head>
+<body>
+  <div class="katallassos-header py-md-3 px-md-4 p-3 b-bottom container-fluid">
+    <nav class="row m-0 my-md-0">
+      <div class="col pt-md-1 pt-sm-1 pt-0">
+        <a class="navbar-brand" href="#">
+          <img src="dist/img/logo.png" class="d-inline-block align-top pt-1" height="30px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="icon ion-ios-menu"></span>
+        </button>
+      </div>
+      <div class="col-6 katallassos-header--menu d-inline-flex text-center px-0 collapse navbar-collapse" id="navbarTogglerDemo02">
+        <div class="navbar-nav">
+          <a class="p-2 flex-fill" href="#">About</a>
+          <a class="p-2 flex-fill" href="team.html">Team</a>
+          <a class="p-2 flex-fill" href="#">Papers</a>
+          <a class="p-2 flex-fill" href="#">Roadmap</a>
+          <a class="p-2 flex-fill" href="#">Newsletter</a>
+        </div>
+      </div>
+      <div class="col text-right py-1 px-0">
+        <a class="btn btn-sm btn-outline-white py-2 px-3" href="#">Join Bitcoin Suisse Private Sale</a>
+      </div>
+    </nav>
+  </div>
+
+  <section class="katallassos-hero">
+    <div class="hero-meteor"></div>
+    <canvas id="bgCanvas"></canvas>
+    <canvas id="terCanvas"></canvas>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 offset-md-1 col-xs-12 col-sm-12 text-left hero-content">
+          <h2 class="hero-title">
+            A Standard Framework <br>for <span>Finance</span>
+          </h2>
+          <p class="hero-subtitle px-md-0 px-sm-5 px-2 my-4">for building decentralised derivative contracts and services for both established blockchain initiatives, new projects, and traditional financial institutions.</p>
+          <button type="button" class="btn btn-main px-md-5 px-sm-5 px-5 py-md-3 py-sm-3 py-3 mr-md-3 mr-sm-3 mr-0 mt-md-5 mt-sm-5 mt-0">Get started</button>
+          <button type="button" class="btn btn-outline-main px-md-5 px-sm-5 px-5 py-md-3 py-sm-3 py-3 mr-md-3 mr-sm-3 mr-0 mt-md-5 mt-sm-5 mt-3">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="katallassos-tab pb-5">
+    <div class="container-fluid">
+      <div class="row clearfix">
+        <ul class="nav nav-tabs d-flex mx-auto katallassos-tab--nav" id="katalassosTab" role="tablist">
+          <li class="nav-item flex-fill katallassos-tab--nav-developer">
+            <a class="nav-link py-4 px-sm-4" id="forDeveloper-tab" data-toggle="tab" href="#forDeveloper" role="tab" aria-controls="forDeveloper" aria-selected="true">
+              <i class="fi flaticon-programmer"></i>
+              <span>
+                <h5>For Developers</h5>
+                <p>Build any financial product</p>
+              </span>
+            </a>
+          </li>
+          <li class="nav-item flex-fill katallassos-tab--nav-user">
+            <a class="nav-link active py-4 px-3 px-md-4 px-sm-4" id="forUsers-tab" data-toggle="tab" href="#forUsers" role="tab" aria-controls="forUsers" aria-selected="false">
+              <i class="fi flaticon-employee"></i>
+              <span>
+                <h5>For Users</h5>
+                <p>Experience a new financial system</p>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="tab-content" id="katalassosTabContent">
+
+      <div class="tab-pane fade katallassos-tab--content" id="forDeveloper" role="tabpanel" aria-labelledby="forDeveloper-tab">
+        <div class="container katallassos-tab--benefit-wrapper pt-5">
+          <div class="row content--benefit p-3 p-md-5 p-sm-1">
+            <div class="col-md-12 pb-5 text-center">
+              <h6 class="section-title-small">For Developers</h6>
+              <h3 class="section-title p-md-3 p-sm-3 p-2">Build any Financial Product</h3>
+              <p class="section-title-desc">Katallassos integrates all the tools needed to create any financial <br>product that you can imagine.</p>
+            </div>
+
+            <div class="col-md-6 content--benefit-block p-sm-3 p-2 py-sm-4 px-md-5">
+              <i class="fi flaticon-document"></i>
+              <span>
+                <h4>Contracts</h4>
+                <p>the ACTUS standard is a set of smart financial contracts that can be combined together to make any financial contract possible.</p>
+              </span>
+            </div>
+            <div class="col-md-6 content--benefit-block p-sm-3 p-2 py-sm-4 px-md-5">
+              <i class="fi flaticon-wallet"></i>
+              <span>
+                <h4>Tokens</h4>
+                <p>a range of built-in tokens representing both crypto assets (Bitcoin, Ether, …) and fiat assets (US dollar, Euro, Swiss franc, …)</p>
+              </span>
+            </div>
+            <div class="col-md-6 content--benefit-block p-sm-3 p-2 py-sm-4 px-md-5">
+              <i class="fi flaticon-decentralized"></i>
+              <span>
+                <h4>Oracle</h4>
+                <p>decentralized oracles on-chain for any external data feed (prices, interest rates, bank transfers, etc) provided by Chainlink</p>
+              </span>
+            </div>
+            <div class="col-md-6 content--benefit-block p-sm-3 p-2 py-sm-4 px-md-5">
+              <i class="fi flaticon-report"></i>
+              <span>
+                <h4>Performance</h4>
+                <p>built from scratch for performance, katallassos is capable of sub-second latency and +10k tx/s</p>
+              </span>
+            </div>
+            <div class="col-md-6 content--benefit-block p-sm-3 p-2 py-sm-4 px-md-5">
+              <i class="fi flaticon-cryptocurrency"></i>
+              <span>
+                <h4>Longevity</h4>
+                <p>an extremely flexible and easily upgradable blockchain means we will always use state-of-the-art technology</p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-pane fade katallassos-tab--content show active" id="forUsers" role="tabpanel" aria-labelledby="forUsers-tab">
+        <div class="container katallassos-tab--benefit-wrapper pt-5">
+          <div class="row content--benefit p-3 p-md-5 p-sm-1">
+            <div class="col-md-12 pb-5 text-center">
+              <h6 class="section-title-small">For USERS</h6>
+              <h3 class="section-title p-md-3 p-sm-3 p-2">Experience a New Financial System</h3>
+              <p class="section-title-desc">Katallassos combines the best features of centralized and <br> decentralized financial services</p>
+            </div>
+            <div class="col-md-6 content--benefit-block p-sm-3 p-2 py-sm-4 px-md-5">
+              <i class="fi flaticon-business-and-finance"></i>
+              <span>
+                <h4>Non-custodial</h4>
+                <p>All the services built on top of Katallassos are non-custodial. You are always in control of your money.</p>
+              </span>
+            </div>
+            <div class="col-md-6 content--benefit-block p-sm-3 p-2 py-sm-4 px-md-5">
+              <i class="fi flaticon-lock"></i>
+              <span>
+                <h4>Trustless</h4>
+                <p>On-chain oracle and settlement means all contracts are fairly executed. No need to trust a third-party.</p>
+              </span>
+            </div>
+            <div class="col-md-6 content--benefit-block p-sm-3 p-2 py-sm-4 px-md-5">
+              <i class="fi flaticon-speed"></i>
+              <span>
+                <h4>fast</h4>
+                <p>Sub-second blocktimes create a seamless user experience. Fast like a centralized service.</p>
+              </span>
+            </div>
+            <div class="col-md-6 content--benefit-block p-sm-3 p-2 py-sm-4 px-md-5">
+              <i class="fi flaticon-account"></i>
+              <span>
+                <h4>Convenient</h4>
+                <p>Every service on katallassos connects directly to your account. Access all financial services with just one account.</p>
+              </span>
+            </div>
+            <div class="col-md-6 content--benefit-block p-sm-3 p-2 py-sm-4 px-md-5">
+              <i class="fi flaticon-server"></i>
+              <span>
+                <h4>interoperable</h4>
+                <p>Katallassos connects to several different blockchains and banks. Connecting the crypto and legacy financial systems.</p>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="katallassos-support">
+    <div class="container">
+      <div class="row content--support p-md-5 p-sm-5 p-2">
+        <div class="col-md-12 b-top b-bottom text-center">
+          <ul class="content--support-list d-flex mx-auto justify-content-center py-md-5 py-sm-3 py-3">
+            <li class="flex-fill">
+              <img src="dist/img/logosct.png">
+            </li>
+            <li class="flex-fill">
+              <img src="dist/img/ariadne.png">
+            </li>
+            <li class="flex-fill">
+              <img src="dist/img/polkadot.png">
+            </li>
+            <li class="flex-fill">
+              <img src="dist/img/chainlink.png">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="katallassos-whitepaper">
+    <div class="container">
+
+      <div class="row content--whitepaper p-md-5 p-sm-4 py-5 px-2 px-sm-0">
+        <div class="col-md-12 text-center pt-0 px-md-5 px-sm-3 px-2 pb-5">
+          <h6>Whitepaper</h6>
+          <h3 class="section-title">Read Our Papers</h3>
+          <div class="row py-5">
+            <div class="col-md-4 mb-md-0 mb-sm-0 mb-3">
+              <a href="#">
+                <div class="whitepaper-button py-4 px-3">
+                  <span class="whitepaper-icon">
+                    <i class="fi flaticon-text-documents"></i>
+                  </span>
+                  <span class="whitepaper-title">
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                    <p>Last update Dec 2018</p>
+                  </span>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 mb-md-0 mb-sm-0 mb-3">
+              <a href="#">
+                <div class="whitepaper-button py-4 px-3">
+                  <span class="whitepaper-icon">
+                    <i class="fi flaticon-text-documents"></i>
+                  </span>
+                  <span class="whitepaper-title">
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                    <p>Last update Dec 2018</p>
+                  </span>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 mb-md-0 mb-sm-0 mb-3">
+              <a href="#">
+                <div class="whitepaper-button py-4 px-3">
+                  <span class="whitepaper-icon">
+                    <i class="fi flaticon-text-documents"></i>
+                  </span>
+                  <span class="whitepaper-title">
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                    <p>Last update Dec 2018</p>
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="katallassos-uses py-5">
+    <div class="uses-meteor mobile-hide"></div>
+    <canvas id="bgUsesCanvas"></canvas>
+    <canvas id="terUsesCanvas"></canvas>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-6 col-sm-12 col-xs-12 px-5 py-3 p-sm-0 katallassos-uses--card">
+          <h3 class="section-title">Uses</h3>
+          <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header pt-4 pb-4 px-0" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="uses-card--button" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Investing
+                  </button>
+                  <button class="uses-card--icon float-right" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <i class="icon when-closed ion-md-add-circle-outline"></i>
+                    <i class="icon when-opened ion-md-remove-circle-outline"></i>
+                  </button>
+                </h2>
+              </div>
+
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body pt-1 pb-4 px-0">
+                  Use a futures contracts to bet on the price of Bitcoin. Or the price of oil, or the S&P500 lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header pt-4 pb-4 px-0" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="uses-card--button collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Hedging
+                  </button>
+                  <button class="uses-card--icon collapsed float-right" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="icon when-closed ion-md-add-circle-outline"></i>
+                    <i class="icon when-opened ion-md-remove-circle-outline"></i>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body pt-1 pb-4 px-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header pt-4 pb-4 px-0" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="uses-card--button collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Insurance
+                  </button>
+                  <button class="uses-card--icon collapsed float-right" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                    <i class="icon when-closed ion-md-add-circle-outline"></i>
+                    <i class="icon when-opened ion-md-remove-circle-outline"></i>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body pt-1 pb-4 px-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header pt-4 pb-4 px-0" id="headingFour">
+                <h2 class="mb-0">
+                  <button class="uses-card--button collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Loan
+                  </button>
+                  <button class="uses-card--icon collapsed float-right" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                    <i class="icon when-closed ion-md-add-circle-outline"></i>
+                    <i class="icon when-opened ion-md-remove-circle-outline"></i>
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                <div class="card-body pt-1 pb-4 px-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="katallassos-press-roadmap">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="katallassos-press py-md-5 py-sm-5 py-3 b-bottom">
+            <ul class="katallassos-press--list d-flex mx-auto justify-content-center">
+              <li class="flex-fill">
+                <img src="dist/img/origlogo2x.png">
+              </li>
+              <li class="flex-fill">
+                <img src="dist/img/logo-forbes.png">
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row katallassos-roadmap ">
+        <div class="col-md-12">
+          <div class="py-5 text-center">
+            <h3 class="section-title">Roadmap</h3>
+          </div>
+        </div>
+      </div>
+      <div class="row katallassos-roadmap">
+        <div class="col-md-4">
+          <div class="roadmap-table first active">
+            <ul class="roadmap-table--phase d-flex p-4">
+              <li class="flex-fill phase-left">Phase 1</li>
+              <li class="flex-fill phase-right">Q1 2019</li>
+            </ul>
+            <ul class="roadmap-table--list d-flex flex-column pb-4 pt-2 px-4">
+              <li>Testnet using Substrate</li>
+              <li>HTLC contracts for atomic swap trading</li>
+              <li>Compatibility with Imagewallet</li>
+              <li>Running on Polkadot testnet as parachain</li>
+            </ul>
+            <div class="arrow-down mx-auto"></div>
+            <div class="roadmap-nav--list">
+            </div>
+            <a href="#"></a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="roadmap-table center">
+            <ul class="roadmap-table--phase d-flex p-4">
+              <li class="flex-fill phase-left">Phase 2</li>
+              <li class="flex-fill phase-right">Q3 2019</li>
+            </ul>
+            <ul class="roadmap-table--list d-flex flex-column pb-4 pt-2 px-4">
+              <li>Enso Implemented</li>
+              <li>Partial implementation of runtime</li>
+              <li>Centralized oracle</li>
+              <li>Small subset of Actus contracts</li>
+              <li>Move to a permissioned</li>
+            </ul>
+            <div class="arrow-down mx-auto"></div>
+            <div class="roadmap-nav--list">
+            </div>
+            <a href="#"></a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="roadmap-table last">
+            <ul class="roadmap-table--phase d-flex p-4">
+              <li class="flex-fill phase-left">Phase 3</li>
+              <li class="flex-fill phase-right">Q1 2020</li>
+            </ul>
+            <ul class="roadmap-table--list d-flex flex-column pb-4 pt-2 px-4">
+              <li>Full implementation of runtime</li>
+              <li>Decentralized oracle Chainlink</li>
+              <li>All ACTUS contracts implemented</li>
+              <li>Permissionless blockchain with Albatross as consensus</li>
+            </ul>
+            <div class="arrow-down mx-auto"></div>
+            <div class="roadmap-nav--list">
+            </div>
+            <a href="#"></a>
+          </div>
+        </div>
+
+        <div class="roadmap-nav--active first"></div>
+      </div>
+<!--       <div class="row katallassos-roadmap roadmap-nav mt-4 mb-5 mobile-hide">
+        <div class="col-md-4"><div class="roadmap-nav--list first active"></div></div>
+        <div class="col-md-4"><div class="roadmap-nav--list center"></div></div>
+        <div class="col-md-4"><div class="roadmap-nav--list last"></div></div>
+      </div> -->
+
+      <div class="row">
+        <div class="col-md-12 pb-5 pt-5">
+          <div class="katallassos-roadmap--product py-md-5 py-sm-5 py-0 text-center">
+            <h3 class="section-title">Built by Trinkler Software</h3>
+            <p class="trinkler-products-desc px-md-5 px-sm-5 px-2 py-4">
+              Trinkler Software AG a blockchain software development company founded by Reto Trinkler and based in Crypto Valley, Switzerland. It was founded in April 2018 with a focus on building a toolkit of FinTech tools that can enable people to become their own economies and to actively participate in exchanges with one another. Learn more at <a href="#">https://trinkler.software.</a>
+            </p>
+
+            <h5 class="other-products p-3">Other products by Trinkler software:</h5>
+            <a href="#" class="btn btn-light trinkler-products px-4 py-3 mr-md-3 mr-sm-3 mt-3">
+              <img src="dist/img/imagewallet.png">
+              <span>
+                <h4>Image Wallet</h4>
+                <p>https://imagewallet.io</p>
+              </span>
+            </a>
+            <a href="#"  class="btn btn-light trinkler-products px-4 py-3 mt-3">
+              <img src="dist/img/agoratrade.png">
+              <span>
+                <h4>Agora Trade</h4>
+                <p>https://beta.agora.trade</p>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer katallassos-footer mt-auto">
+    <div class="container">
+      <div class="row katallassos-footer--menu pt-4 pb-4 b-bottom">
+        <ul class="katallassos-footer--menu-list list-inline mx-auto justify-content-center">
+          <li class="list-inline-item mr-md-5 mr-sm-5 mr-4">
+            <a href="#">ABOUT</a>
+          </li>
+          <li class="list-inline-item mr-md-5 mr-sm-5 mr-4">
+            <a href="#">TEAM</a>
+          </li>
+          <li class="list-inline-item mr-md-5 mr-sm-5 mr-4">
+            <a href="#">PAPERS</a>
+          </li>
+          <li class="list-inline-item mr-md-5 mr-sm-5 mr-4">
+            <a href="#">ROADMAP</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">NEWSLETTER</a>
+          </li>
+        </ul>
+      </div>
+      <div class="row katallassos-footer--copyright py-3 ">
+        <div class="col-md-12 text-center">
+          <p class="mb-0">©2019 Trinkler Software AG. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="dist/js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="dist/js/bootstrap.min.js"></script>
+  <script src="dist/js/meteor-canvas.js"></script>
+  <script src="dist/js/meteor-uses-canvas.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.roadmap-table').find('a[href="#"]').on('click', function (e) {
+        e.preventDefault();
+        let elem = e.target.parentElement.classList[1];
+        console.log(elem);
+        if (elem == "first"){
+          $(this).closest('.katallassos-roadmap').find('.first, .active').toggleClass('active');
+          $('.roadmap-nav--active').removeClass('center').removeClass('last').addClass('first');
+        } else if (elem == "center") {
+          $(this).closest('.katallassos-roadmap').find('.center, .active').toggleClass('active');
+          $('.roadmap-nav--active').removeClass('first').removeClass('last').addClass('center');
+        } else{
+          $(this).closest('.katallassos-roadmap').find('.last, .active').toggleClass('active');
+          $('.roadmap-nav--active').removeClass('first').removeClass('center').addClass('last');
+        }
+      });
+    });
+  </script>
+
+
+</body>
+</html>
