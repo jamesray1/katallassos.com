@@ -1,0 +1,743 @@
+.katallassos-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 9999; }
+  .katallassos-header .navbar-toggler {
+    display: none; }
+  .katallassos-header .katallassos-header--menu .navbar-nav {
+    flex-direction: row;
+    width: 100%; }
+    .katallassos-header .katallassos-header--menu .navbar-nav a {
+      font-family: franklin-gothic-urw-comp, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 400;
+      color: #fff;
+      font-size: 18pt;
+      padding-top: 12px !important;
+      line-height: normal; }
+      .katallassos-header .katallassos-header--menu .navbar-nav a:hover {
+        color: #a9fff6; }
+
+#bgCanvas, #bgUsesCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+#terCanvas, #terUsesCanvas {
+  display: none; }
+
+.katallassos-hero {
+  min-height: 800px;
+  padding-top: 240px;
+  background: #131929;
+  background: -moz-linear-gradient(left, #131929 0%, #2a335a 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #131929), color-stop(100%, #2a335a));
+  background: -webkit-linear-gradient(left, #131929 0%, #2a335a 100%);
+  background: -o-linear-gradient(left, #131929 0%, #2a335a 100%);
+  background: -ms-linear-gradient(left, #131929 0%, #2a335a 100%);
+  background: linear-gradient(to right, #131929 0%, #2a335a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131929', endColorstr='#2a335a', GradientType=1 );
+  text-align: center;
+  position: relative; }
+  .katallassos-hero .hero-meteor {
+    background-image: url("../img/Metor.png");
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    z-index: 99;
+    max-width: 43%; }
+  .katallassos-hero .meteor {
+    border: 2px solid transparent;
+    border-bottom: 60px solid #fff;
+    position: absolute;
+    transform-origin: top center;
+    opacity: 0; }
+  .katallassos-hero .meteor:after {
+    content: '';
+    position: absolute;
+    top: 58px;
+    left: 50%;
+    height: 4px;
+    width: 4px;
+    border-radius: 100%;
+    background: #fff;
+    transform: translateX(-50%);
+    box-shadow: 0 0 15px 0 #fff; }
+  .katallassos-hero .hero-title {
+    color: #fff;
+    font-size: 55px;
+    line-height: normal; }
+    .katallassos-hero .hero-title span {
+      color: #a9fff6; }
+  .katallassos-hero .hero-subtitle {
+    color: #c2d5e8;
+    font-size: 22px;
+    line-height: 1.5;
+    text-align: left;
+    max-width: 70%; }
+
+.katallassos-hero-team {
+  min-height: 400px;
+  padding-top: 160px;
+  background: #131929;
+  background: -moz-linear-gradient(left, #131929 0%, #2a335a 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #131929), color-stop(100%, #2a335a));
+  background: -webkit-linear-gradient(left, #131929 0%, #2a335a 100%);
+  background: -o-linear-gradient(left, #131929 0%, #2a335a 100%);
+  background: -ms-linear-gradient(left, #131929 0%, #2a335a 100%);
+  background: linear-gradient(to right, #131929 0%, #2a335a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131929', endColorstr='#2a335a', GradientType=1 );
+  text-align: center; }
+  .katallassos-hero-team .hero-title {
+    color: #fff;
+    font-size: 34px; }
+    .katallassos-hero-team .hero-title span {
+      color: #a9fff6; }
+  .katallassos-hero-team .hero-subtitle {
+    color: #c2d5e8;
+    line-height: 1.5; }
+
+.katallassos-team {
+  background: #131929; }
+  .katallassos-team .team-header {
+    color: #394575;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 70px; }
+  .katallassos-team .team-profile {
+    text-align: center; }
+    .katallassos-team .team-profile img {
+      width: 200px;
+      margin-bottom: 20px; }
+    .katallassos-team .team-profile .team-profile--name {
+      text-align: left;
+      font-family: franklin-gothic-urw-comp, sans-serif;
+      color: #a9fff6;
+      text-transform: uppercase;
+      margin-bottom: 0; }
+    .katallassos-team .team-profile .team-profile--title {
+      text-align: left;
+      font-family: franklin-gothic-urw-comp, sans-serif;
+      color: #fff;
+      font-size: 18px; }
+    .katallassos-team .team-profile .team-profile--desc {
+      text-align: left;
+      color: #c2d5e8;
+      height: 100px;
+      max-height: 100px;
+      line-height: 1.5;
+      text-overflow: ellipsis;
+      font-size: 16px;
+      overflow-y: hidden;
+      transition: max-height 0.7s linear; }
+      .katallassos-team .team-profile .team-profile--desc.expanded {
+        height: auto;
+        max-height: 400px;
+        transition: max-height 0.7s linear; }
+    .katallassos-team .team-profile .team-profile--link {
+      float: left;
+      color: #505e72;
+      font-size: 14px;
+      text-decoration: underline; }
+      .katallassos-team .team-profile .team-profile--link:hover {
+        color: #72849c; }
+
+.hero-content {
+  z-index: 9999; }
+
+.katallassos-tab {
+  background: #131929; }
+  .katallassos-tab .katallassos-tab--nav {
+    width: 100%;
+    border-bottom: 0; }
+    .katallassos-tab .katallassos-tab--nav .nav-item {
+      background: #222a48; }
+    .katallassos-tab .katallassos-tab--nav .nav-item > .nav-link {
+      width: 100%;
+      border: 0;
+      border-radius: 0; }
+      .katallassos-tab .katallassos-tab--nav .nav-item > .nav-link i {
+        color: #5e6a9c;
+        font-size: 60px;
+        vertical-align: middle; }
+      .katallassos-tab .katallassos-tab--nav .nav-item > .nav-link span {
+        vertical-align: middle;
+        display: inline-block;
+        text-align: left;
+        padding-left: 15px; }
+        .katallassos-tab .katallassos-tab--nav .nav-item > .nav-link span h5 {
+          font-family: franklin-gothic-urw-comp, sans-serif;
+          text-transform: uppercase;
+          font-size: 30px;
+          letter-spacing: 3px;
+          font-weight: 400 !important;
+          color: #5e6a9c;
+          margin-bottom: 5px; }
+        .katallassos-tab .katallassos-tab--nav .nav-item > .nav-link span p {
+          color: #5e6a9c;
+          margin-bottom: 0;
+          letter-spacing: 2px;
+          font-size: 20px; }
+    .katallassos-tab .katallassos-tab--nav .nav-item > .nav-link.active {
+      background: #131929; }
+      .katallassos-tab .katallassos-tab--nav .nav-item > .nav-link.active i {
+        color: #a9fff6; }
+      .katallassos-tab .katallassos-tab--nav .nav-item > .nav-link.active span {
+        color: #a9fff6; }
+        .katallassos-tab .katallassos-tab--nav .nav-item > .nav-link.active span h5 {
+          color: #ffffff; }
+        .katallassos-tab .katallassos-tab--nav .nav-item > .nav-link.active span p {
+          color: #ffffff; }
+    .katallassos-tab .katallassos-tab--nav .katallassos-tab--nav-developer a.nav-link {
+      text-align: right;
+      padding-right: 150px; }
+  .katallassos-tab .katallassos-tab--content .katallassos-tab--benefit-wrapper .content--benefit .content--benefit-block i {
+    color: #a9fff6;
+    font-size: 85px;
+    display: table-cell;
+    vertical-align: top;
+    width: 90px; }
+  .katallassos-tab .katallassos-tab--content .katallassos-tab--benefit-wrapper .content--benefit .content--benefit-block span {
+    padding-left: 20px;
+    display: table-cell;
+    vertical-align: middle; }
+    .katallassos-tab .katallassos-tab--content .katallassos-tab--benefit-wrapper .content--benefit .content--benefit-block span h4 {
+      font-family: franklin-gothic-urw-comp, sans-serif;
+      color: #a9fff6;
+      font-size: 32px;
+      font-weight: 400;
+      letter-spacing: 2px;
+      text-transform: uppercase; }
+    .katallassos-tab .katallassos-tab--content .katallassos-tab--benefit-wrapper .content--benefit .content--benefit-block span p {
+      color: #c2d5e8;
+      line-height: 1.5;
+      font-size: 18px; }
+
+.katallassos-support {
+  background: #131929;
+  background: -moz-linear-gradient(top, #131929 0%, #1b2234 58%, #1b2234 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #131929), color-stop(58%, #1b2234), color-stop(100%, #1b2234));
+  background: -webkit-linear-gradient(top, #131929 0%, #1b2234 58%, #1b2234 100%);
+  background: -o-linear-gradient(top, #131929 0%, #1b2234 58%, #1b2234 100%);
+  background: -ms-linear-gradient(top, #131929 0%, #1b2234 58%, #1b2234 100%);
+  background: linear-gradient(to bottom, #131929 0%, #1b2234 58%, #1b2234 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131929', endColorstr='#1b2234', GradientType=0 ); }
+  .katallassos-support .content--support .content--support-list li {
+    padding: 10px; }
+    .katallassos-support .content--support .content--support-list li img {
+      height: 50px;
+      width: 70%;
+      object-fit: contain; }
+
+.katallassos-whitepaper {
+  background: #1b2234; }
+  .katallassos-whitepaper .content--whitepaper h6 {
+    color: #c2d5e8;
+    text-transform: uppercase;
+    font-weight: 400 !important;
+    letter-spacing: 2px;
+    font-size: 22px; }
+  .katallassos-whitepaper .content--whitepaper .whitepaper-button {
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px; }
+    .katallassos-whitepaper .content--whitepaper .whitepaper-button:hover {
+      background: #f2f2f2; }
+    .katallassos-whitepaper .content--whitepaper .whitepaper-button span {
+      display: table-cell;
+      vertical-align: middle; }
+      .katallassos-whitepaper .content--whitepaper .whitepaper-button span.whitepaper-icon {
+        min-width: 60px; }
+        .katallassos-whitepaper .content--whitepaper .whitepaper-button span.whitepaper-icon i {
+          font-size: 25px;
+          padding: 10px 12px;
+          border-radius: 100%;
+          border: 1px solid #cccccc;
+          background: #fbfbfb;
+          color: #5e6a9c;
+          height: 60px; }
+      .katallassos-whitepaper .content--whitepaper .whitepaper-button span.whitepaper-title {
+        padding-left: 15px;
+        text-align: left; }
+        .katallassos-whitepaper .content--whitepaper .whitepaper-button span.whitepaper-title h5 {
+          margin-bottom: 0;
+          color: #35261d;
+          line-height: 1.4;
+          font-size: 18px;
+          font-weight: 400; }
+        .katallassos-whitepaper .content--whitepaper .whitepaper-button span.whitepaper-title p {
+          font-weight: 300;
+          color: #828282;
+          font-size: 14px; }
+
+.katallassos-uses {
+  background: #131929;
+  padding-top: 130px !important;
+  padding-bottom: 130px !important;
+  position: relative; }
+  .katallassos-uses .uses-meteor {
+    background-repeat: no-repeat;
+    background-image: url(../img/Meteor_left.png);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    max-width: 70%;
+    left: 0;
+    top: 0;
+    z-index: 99; }
+  .katallassos-uses .katallassos-uses--card {
+    z-index: 999; }
+    .katallassos-uses .katallassos-uses--card .card {
+      border: 0;
+      border-bottom: 1px solid #505e72 !important;
+      background: none;
+      border-radius: 0; }
+      .katallassos-uses .katallassos-uses--card .card .card-header {
+        border: 0;
+        background: none; }
+        .katallassos-uses .katallassos-uses--card .card .card-header:focus {
+          outline: none; }
+        .katallassos-uses .katallassos-uses--card .card .card-header .uses-card--button {
+          background: none;
+          border: 0;
+          font-family: franklin-gothic-urw-comp, sans-serif;
+          font-size: 36px;
+          text-transform: uppercase;
+          font-weight: 400 !important;
+          letter-spacing: 2px;
+          color: #a9fff6;
+          padding: 0;
+          line-height: normal; }
+          .katallassos-uses .katallassos-uses--card .card .card-header .uses-card--button:hover {
+            cursor: pointer;
+            color: #5dffee; }
+          .katallassos-uses .katallassos-uses--card .card .card-header .uses-card--button:focus {
+            outline: none; }
+          .katallassos-uses .katallassos-uses--card .card .card-header .uses-card--button.collapsed {
+            color: #c2d5e8; }
+        .katallassos-uses .katallassos-uses--card .card .card-header .uses-card--icon {
+          background: none;
+          border: 0;
+          font-size: 24px;
+          color: #a9fff6;
+          padding: 0;
+          padding-top: 15px;
+          line-height: 1; }
+          .katallassos-uses .katallassos-uses--card .card .card-header .uses-card--icon:hover {
+            cursor: pointer;
+            color: #5dffee; }
+          .katallassos-uses .katallassos-uses--card .card .card-header .uses-card--icon:focus {
+            outline: none; }
+          .katallassos-uses .katallassos-uses--card .card .card-header .uses-card--icon.collapsed > .when-opened,
+          .katallassos-uses .katallassos-uses--card .card .card-header .uses-card--icon:not(.collapsed) > .when-closed {
+            display: none; }
+          .katallassos-uses .katallassos-uses--card .card .card-header .uses-card--icon .when-opened {
+            color: #cfcfcf; }
+      .katallassos-uses .katallassos-uses--card .card .card-body {
+        font-size: 18px;
+        color: #c2d5e8; }
+
+.katallassos-press-roadmap {
+  background: #131929;
+  background: -moz-linear-gradient(top, #131929 0%, #2a335a 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #131929), color-stop(100%, #2a335a));
+  background: -webkit-linear-gradient(top, #131929 0%, #2a335a 100%);
+  background: -o-linear-gradient(top, #131929 0%, #2a335a 100%);
+  background: -ms-linear-gradient(top, #131929 0%, #2a335a 100%);
+  background: linear-gradient(to bottom, #131929 0%, #2a335a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131929', endColorstr='#2a335a', GradientType=0 ); }
+  .katallassos-press-roadmap .section-title {
+    padding-top: 80px; }
+  .katallassos-press-roadmap .katallassos-press .katallassos-press--list li {
+    padding: 10px;
+    width: -webkit-fill-available; }
+    .katallassos-press-roadmap .katallassos-press .katallassos-press--list li img {
+      height: 50px;
+      width: 100%;
+      object-fit: contain; }
+  .katallassos-press-roadmap .katallassos-roadmap {
+    position: relative; }
+    .katallassos-press-roadmap .katallassos-roadmap .roadmap-table.active .roadmap-table--phase {
+      background: #adb4d61f; }
+    .katallassos-press-roadmap .katallassos-roadmap .roadmap-table.active .roadmap-table--list {
+      background: #616b9014; }
+    .katallassos-press-roadmap .katallassos-roadmap .roadmap-table.active .roadmap-nav--list {
+      position: relative; }
+      .katallassos-press-roadmap .katallassos-roadmap .roadmap-table.active .roadmap-nav--list::after {
+        background: #a9fff6;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 175px;
+        height: 4px;
+        border-radius: 10px; }
+    .katallassos-press-roadmap .katallassos-roadmap .roadmap-table.active a {
+      background-color: #394575; }
+    .katallassos-press-roadmap .katallassos-roadmap .roadmap-table.active .arrow-down {
+      width: 0;
+      height: 0;
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+      border-top: 12px solid #616b9014; }
+    .katallassos-press-roadmap .katallassos-roadmap .roadmap-table .roadmap-table--phase {
+      background: #1d1d1d4d; }
+      .katallassos-press-roadmap .katallassos-roadmap .roadmap-table .roadmap-table--phase .phase-left {
+        font-family: franklin-gothic-urw-comp, sans-serif;
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 30px;
+        letter-spacing: 1px;
+        text-transform: uppercase; }
+      .katallassos-press-roadmap .katallassos-roadmap .roadmap-table .roadmap-table--phase .phase-right {
+        text-align: right;
+        color: #a9fff6;
+        font-weight: 100;
+        font-family: proxima-nova, sans-serif;
+        font-size: 22px;
+        letter-spacing: 1px;
+        margin-top: 8px; }
+    .katallassos-press-roadmap .katallassos-roadmap .roadmap-table .roadmap-table--list {
+      background: #1d1d1d33;
+      min-height: 320px; }
+      .katallassos-press-roadmap .katallassos-roadmap .roadmap-table .roadmap-table--list li {
+        padding-bottom: 15px;
+        padding-top: 15px;
+        border-bottom: 1px solid #ffffff20;
+        color: #cccbe4;
+        font-weight: 400;
+        font-size: 17px;
+        letter-spacing: 1px; }
+    .katallassos-press-roadmap .katallassos-roadmap .roadmap-table .roadmap-nav--list {
+      width: 110%;
+      height: 4px;
+      background: #6a708a;
+      margin-top: 2rem;
+      position: relative;
+      border-radius: 10px; }
+    .katallassos-press-roadmap .katallassos-roadmap .roadmap-table.last .roadmap-nav--list {
+      width: 100%; }
+    .katallassos-press-roadmap .katallassos-roadmap .roadmap-table a {
+      content: '';
+      position: absolute;
+      transform: translateX(-50%);
+      bottom: -0.3rem;
+      height: 15px;
+      z-index: 9999;
+      width: 15px;
+      border-radius: 50%;
+      border: 3px solid #dfdfdf;
+      left: 50%;
+      background-color: #dfdfdf; }
+    .katallassos-press-roadmap .katallassos-roadmap .roadmap-table .arrow-down {
+      width: 0;
+      height: 0;
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+      border-top: 12px solid #1d1d1d33; }
+    .katallassos-press-roadmap .katallassos-roadmap .roadmap-nav--active {
+      width: 100%;
+      height: 4px;
+      background: #a9fff6;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      border-radius: 10px;
+      -webkit-transition: width 0.7s ease-out;
+      transition: width 0.7s ease-out;
+      margin-left: 15px; }
+      .katallassos-press-roadmap .katallassos-roadmap .roadmap-nav--active.first {
+        width: 15%; }
+      .katallassos-press-roadmap .katallassos-roadmap .roadmap-nav--active.center {
+        width: 49%; }
+      .katallassos-press-roadmap .katallassos-roadmap .roadmap-nav--active.last {
+        width: 82%; }
+    .katallassos-press-roadmap .katallassos-roadmap.roadmap-nav {
+      width: 100%;
+      height: 4px;
+      background: #6a708a;
+      padding: 0;
+      margin: 0;
+      position: relative;
+      border-radius: 10px; }
+      .katallassos-press-roadmap .katallassos-roadmap.roadmap-nav .roadmap-nav--list a {
+        content: '';
+        position: absolute;
+        transform: translateX(-50%);
+        bottom: -5px;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        border: 3px solid #dfdfdf;
+        background-color: #dfdfdf; }
+      .katallassos-press-roadmap .katallassos-roadmap.roadmap-nav .roadmap-nav--list.first a {
+        right: -15px; }
+      .katallassos-press-roadmap .katallassos-roadmap.roadmap-nav .roadmap-nav--list.center a {
+        left: 50%; }
+      .katallassos-press-roadmap .katallassos-roadmap.roadmap-nav .roadmap-nav--list.last a {
+        left: 53%; }
+      .katallassos-press-roadmap .katallassos-roadmap.roadmap-nav .roadmap-nav--list.active {
+        background: #a9fff6;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 175px;
+        height: 4px;
+        border-radius: 10px; }
+        .katallassos-press-roadmap .katallassos-roadmap.roadmap-nav .roadmap-nav--list.active a {
+          background-color: #394575; }
+      .katallassos-press-roadmap .katallassos-roadmap.roadmap-nav .roadmap-nav--first {
+        background: #a9fff6;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 175px;
+        height: 4px;
+        border-radius: 10px; }
+        .katallassos-press-roadmap .katallassos-roadmap.roadmap-nav .roadmap-nav--first::after {
+          content: '';
+          position: absolute;
+          right: -15px;
+          transform: translateX(-50%);
+          bottom: -5px;
+          height: 15px;
+          width: 15px;
+          border-radius: 50%;
+          border: 3px solid #dfdfdf;
+          background-color: #394575; }
+      .katallassos-press-roadmap .katallassos-roadmap.roadmap-nav .roadmap-nav--center::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -5px;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        border: 3px solid #dfdfdf;
+        background-color: #dfdfdf; }
+      .katallassos-press-roadmap .katallassos-roadmap.roadmap-nav .roadmap-nav--last::after {
+        content: '';
+        position: absolute;
+        left: 53%;
+        transform: translateX(-50%);
+        bottom: -5px;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        border: 3px solid #dfdfdf;
+        background-color: #dfdfdf; }
+  .katallassos-press-roadmap .katallassos-roadmap--product .trinkler-products-desc {
+    color: #cccbe4;
+    font-weight: 400;
+    font-size: 18px; }
+    .katallassos-press-roadmap .katallassos-roadmap--product .trinkler-products-desc a {
+      color: #6998a6; }
+  .katallassos-press-roadmap .katallassos-roadmap--product .other-products {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    color: #6999a7;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 24px;
+    margin-bottom: 0; }
+  .katallassos-press-roadmap .katallassos-roadmap--product .trinkler-products {
+    width: 270px; }
+    .katallassos-press-roadmap .katallassos-roadmap--product .trinkler-products img {
+      display: inline-block;
+      vertical-align: middle;
+      height: 50px;
+      width: 50px;
+      object-fit: contain; }
+    .katallassos-press-roadmap .katallassos-roadmap--product .trinkler-products span {
+      display: inline-block;
+      vertical-align: middle;
+      text-align: left;
+      padding-left: 10px; }
+      .katallassos-press-roadmap .katallassos-roadmap--product .trinkler-products span h4 {
+        margin-bottom: 0; }
+      .katallassos-press-roadmap .katallassos-roadmap--product .trinkler-products span p {
+        color: #6d6d6d;
+        margin-bottom: 0;
+        font-weight: 500;
+        font-size: 14px; }
+
+@media (max-width: 575.98px) {
+  .katallassos-header {
+    background: #131929f5; }
+    .katallassos-header .col {
+      flex-basis: auto;
+      text-align: left !important; }
+      .katallassos-header .col:last-child {
+        text-align: center !important;
+        margin-top: 1rem; }
+    .katallassos-header .navbar-toggler {
+      display: inline-block;
+      color: #ffff;
+      float: right;
+      padding: 0;
+      padding-top: 5px; }
+      .katallassos-header .navbar-toggler span {
+        font-size: 25px; }
+    .katallassos-header .katallassos-header--menu {
+      flex-wrap: wrap; }
+      .katallassos-header .katallassos-header--menu.collapse:not(.show) {
+        display: none !important; }
+      .katallassos-header .katallassos-header--menu .navbar-nav {
+        flex-direction: row;
+        flex-wrap: wrap-reverse;
+        text-align: left;
+        width: 100%;
+        margin-top: 10px;
+        padding-left: 5px; }
+        .katallassos-header .katallassos-header--menu .navbar-nav a.flex-fill {
+          width: 100%;
+          font-size: 16pt; }
+  .katallassos-hero {
+    padding-top: 200px; }
+    .katallassos-hero .col-xs-12 {
+      text-align: center !important; }
+    .katallassos-hero .hero-title {
+      font-size: 35px;
+      text-align: center; }
+    .katallassos-hero .hero-subtitle {
+      font-size: 16px;
+      text-align: center;
+      max-width: 100%; }
+  .katallassos-tab .katallassos-tab--nav .nav-item .nav-link span p {
+    letter-spacing: 1px;
+    font-size: 11px; }
+  .katallassos-tab .katallassos-tab--nav .katallassos-tab--nav-developer a.nav-link {
+    padding-right: 1rem;
+    text-align: left; }
+  .katallassos-tab .katallassos-tab--content .katallassos-tab--benefit-wrapper .content--benefit .content--benefit-block span h4 {
+    font-size: 26px; }
+  .katallassos-tab .katallassos-tab--content .katallassos-tab--benefit-wrapper .content--benefit .content--benefit-block span p {
+    font-size: 16px; }
+  .katallassos-support .content--support .content--support-list {
+    flex-wrap: wrap; }
+    .katallassos-support .content--support .content--support-list .flex-fill {
+      width: 100%; }
+      .katallassos-support .content--support .content--support-list .flex-fill img {
+        height: 35px; }
+  .katallassos-uses {
+    padding-top: 80px !important;
+    padding-bottom: 50px !important; }
+  .katallassos-press-roadmap .katallassos-press .katallassos-press--list {
+    flex-wrap: wrap; }
+    .katallassos-press-roadmap .katallassos-press .katallassos-press--list .flex-fill {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px; }
+      .katallassos-press-roadmap .katallassos-press .katallassos-press--list .flex-fill img {
+        height: 35px; }
+  .katallassos-press-roadmap .katallassos-roadmap--product .section-title {
+    padding-top: 0; } }
+
+@media (max-width: 575.98px) and (orientation: landscape) {
+  .katallassos-hero {
+    min-height: 560px; }
+    .katallassos-hero .btn-outline-main {
+      margin-top: 0 !important; }
+  .katallassos-tab .katallassos-tab--nav {
+    flex-wrap: nowrap; }
+    .katallassos-tab .katallassos-tab--nav .nav-item {
+      width: 50%; }
+      .katallassos-tab .katallassos-tab--nav .nav-item .nav-link span p {
+        letter-spacing: 1px;
+        font-size: 14px; }
+    .katallassos-tab .katallassos-tab--nav .katallassos-tab--nav-developer a.nav-link {
+      padding-right: 1rem; } }
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .katallassos-header {
+    background: #131929f5; }
+    .katallassos-header .col {
+      flex-basis: auto;
+      text-align: left !important; }
+      .katallassos-header .col:last-child {
+        text-align: center !important;
+        margin-top: 1rem; }
+    .katallassos-header .navbar-toggler {
+      display: inline-block;
+      color: #ffff;
+      float: right;
+      padding: 0;
+      padding-top: 5px; }
+      .katallassos-header .navbar-toggler span {
+        font-size: 25px; }
+    .katallassos-header .katallassos-header--menu {
+      flex-wrap: wrap; }
+      .katallassos-header .katallassos-header--menu.collapse:not(.show) {
+        display: none !important; }
+  .katallassos-hero {
+    min-height: 640px;
+    padding-top: 240px; }
+    .katallassos-hero .hero-title {
+      font-size: 38px; }
+    .katallassos-hero .hero-subtitle {
+      font-size: 18px; }
+  .katallassos-tab .katallassos-tab--nav .katallassos-tab--nav-developer a.nav-link {
+    padding-right: 1rem;
+    text-align: left; }
+  .katallassos-support .content--support .content--support-list {
+    flex-wrap: wrap; }
+    .katallassos-support .content--support .content--support-list .flex-fill {
+      width: 100%; }
+      .katallassos-support .content--support .content--support-list .flex-fill img {
+        height: 35px; }
+  .katallassos-uses {
+    padding-top: 80px !important;
+    padding-bottom: 50px !important; }
+  .katallassos-press-roadmap .katallassos-press .katallassos-press--list {
+    flex-wrap: wrap; }
+    .katallassos-press-roadmap .katallassos-press .katallassos-press--list .flex-fill {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px; }
+      .katallassos-press-roadmap .katallassos-press .katallassos-press--list .flex-fill img {
+        height: 35px; }
+  .katallassos-press-roadmap .katallassos-roadmap--product .section-title {
+    padding-top: 0; } }
+
+@media (min-width: 768px) and (max-width: 991.98px) and (orientation: portrait) {
+  .navbar-brand {
+    margin-right: 0; }
+  .katallassos-header .col {
+    padding-top: 0.5rem !important; }
+  .katallassos-header .katallassos-header--menu .navbar-nav {
+    flex-wrap: wrap; }
+  .katallassos-tab .katallassos-tab--nav {
+    flex-wrap: nowrap; }
+    .katallassos-tab .katallassos-tab--nav .nav-item {
+      width: 50%; }
+      .katallassos-tab .katallassos-tab--nav .nav-item .nav-link span p {
+        letter-spacing: 1px;
+        font-size: 14px; }
+    .katallassos-tab .katallassos-tab--nav .katallassos-tab--nav-developer a.nav-link {
+      padding-right: 1rem; } }
+
+@media (min-width: 768px) and (orientation: landscape) {
+  .katallassos-tab .katallassos-tab--nav {
+    flex-wrap: nowrap; }
+    .katallassos-tab .katallassos-tab--nav .nav-item {
+      width: 50%; } }
+
+@media (min-width: 769px) and (max-width: 991px) and (orientation: portrait) {
+  .katallassos-header .katallassos-header--menu .navbar-nav a {
+    font-size: 1rem; }
+  a.btn.btn-sm.btn-outline-white {
+    font-size: 10px; } }
+
+@media (min-width: 320px) and (max-width: 800px) {
+  .mobile-hide {
+    display: none; } }
