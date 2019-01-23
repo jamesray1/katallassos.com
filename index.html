@@ -27,29 +27,6 @@
   <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us19.list-manage.com","uuid":"48964a7b4b5e9480604838bf2","lid":"982968577c","uniqueMethods":true}) })</script>
 </head>
 <body>
-  <div class="katallassos-header py-md-3 px-md-4 p-3 b-bottom container-fluid">
-    <nav class="row m-0 my-md-0">
-      <div class="col pt-md-1 pt-sm-1 pt-0">
-        <a class="navbar-brand" href="#">
-          <img src="dist/img/logo.png" class="d-inline-block align-top pt-1" height="30px">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="icon ion-ios-menu"></span>
-        </button>
-      </div>
-      <div class="col-6 katallassos-header--menu d-inline-flex text-center px-0 collapse navbar-collapse" id="navbarTogglerDemo02">
-        <div class="navbar-nav">
-          <a class="p-2 flex-fill" href="#">About</a>
-          <a class="p-2 flex-fill" href="#">Purpose</a>
-          <a class="p-2 flex-fill" href="#">Team</a>
-          <a class="p-2 flex-fill" href="#">Company</a>
-        </div>
-      </div>
-      <div class="col text-right py-1 px-0">
-        <a class="btn btn-sm btn-outline-white py-2 px-3" href="mailto:katallassos@bitcoinsuisse.ch?Subject=Katallassos Inquiry" target="_top">Investors</a>
-      </div>
-    </nav>
-  </div>
 
   <section class="katallassos-hero">
     <div class="hero-meteor"></div>
@@ -66,6 +43,11 @@
           <a href="https://docs.wixstatic.com/ugd/3df5e2_eceb16e5f7f14d11903a6412aebb9e4a.pdf" target="_blank">
             ACTUS standard.
           </a>ACTUS codifies all major financial contracts such as Futures, Loans, Bonds, Exchanges and any combination thereof.</p>
+          <a href="mailto:katallassos@bitcoinsuisse.ch?Subject=Katallassos Inquiry" target="_top">
+            <button type="button" class="btn btn-main px-md-5 px-sm-5 px-5 py-md-3 py-sm-3 py-3 mr-md-3 mr-sm-3 mr-0 mt-md-5 mt-sm-5 mt-0">
+              Investors
+            </button>
+          </a>
           <a href="http://eepurl.com/dQaLZP">
             <button type="button" class="btn btn-outline-main px-md-5 px-sm-5 px-5 py-md-3 py-sm-3 py-3 mr-md-3 mr-sm-3 mr-0 mt-md-5 mt-sm-5 mt-3">
               Newsletter
@@ -208,7 +190,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 offset-md-6 col-sm-12 col-xs-12 px-5 py-3 p-sm-0 katallassos-uses--card">
-          <h3 class="section-title">Purpose</h3>
+          <h3 class="section-title">Applications</h3>
           <div class="accordion" id="accordionExample">
             <div class="card">
               <div class="card-header pt-4 pb-4 px-0" id="headingOne">
@@ -419,6 +401,18 @@
   <script src="dist/js/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.team-profile').find('a[href="#"]').on('click', function (e) {
+        e.preventDefault();
+        this.expand = !this.expand;
+
+        $(this).text(this.expand?"Read Less":"Read More Bio");
+        $(this).closest('.team-profile').find('.team-profile--desc, .expanded').toggleClass('expanded');
+
+      });
+    });
+  </script>  
   <script src="dist/js/meteor-canvas.js"></script>
   <script src="dist/js/meteor-uses-canvas.js"></script>
   <script type="text/javascript">
