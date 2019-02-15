@@ -38,6 +38,28 @@
 </head>
 <body>
 
+  <div class="katallassos-header py-md-3 px-md-4 p-3 b-bottom container-fluid">
+    <nav class="row m-0 my-md-0">
+      <div class="col pt-md-1 pt-sm-1 pt-0">
+        <a class="navbar-brand" href="#">
+          <img src="dist/img/logo.png" class="d-inline-block align-top pt-1" height="30px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="icon ion-ios-menu"></span>
+        </button>
+      </div>
+      <div class="col-6 katallassos-header--menu d-inline-flex text-center px-0 collapse navbar-collapse" id="navbarTogglerDemo02">
+        <div class="navbar-nav">
+          <a class="p-2 flex-fill" href="#about">About</a>
+          <a class="p-2 flex-fill" href="#partners">Partners</a>
+          <a class="p-2 flex-fill" href="#papers">Papers</a>
+          <a class="p-2 flex-fill" href="#team">Team</a>
+          <a class="p-2 flex-fill" href="#company">Company</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
   <section class="katallassos-hero">
     <div class="hero-meteor"></div>
     <canvas id="bgCanvas"></canvas>
@@ -64,6 +86,7 @@
   </section>
 
   <section class="katallassos-tab pb-5">
+  <a name="about"></a>
     <div class="container-fluid">
       <div class="row clearfix">
         <ul class="nav nav-tabs d-flex mx-auto katallassos-tab--nav" id="katalassosTab" role="tablist">
@@ -103,35 +126,35 @@
               <i class="fi flaticon-document"></i>
               <span>
                 <h4>Contracts</h4>
-                <p>the ACTUS standard is a set of smart financial contracts that can be combined together to make any financial contract possible.</p>
+                <p>The ACTUS standard is a set of smart financial contracts that can be combined together to make any financial contract possible.</p>
               </span>
             </div>
             <div class="col-md-6 content--benefit-block p-sm-3 p-2 py-sm-4 px-md-5">
               <i class="fi flaticon-wallet"></i>
               <span>
                 <h4>Tokens</h4>
-                <p>a range of built-in tokens representing both crypto assets and fiat assets.</p>
+                <p>A range of built-in tokens representing both crypto assets and fiat assets.</p>
               </span>
             </div>
             <div class="col-md-6 content--benefit-block p-sm-3 p-2 py-sm-4 px-md-5">
               <i class="fi flaticon-decentralized"></i>
               <span>
                 <h4>Oracle</h4>
-                <p>decentralized oracles on-chain for any external data feed (prices, interest rates, bank transfers, etc) provided by Chainlink</p>
+                <p>Decentralized oracles on-chain for any external data feed (prices, interest rates, bank transfers, etc) provided by Chainlink.</p>
               </span>
             </div>
             <div class="col-md-6 content--benefit-block p-sm-3 p-2 py-sm-4 px-md-5">
               <i class="fi flaticon-report"></i>
               <span>
                 <h4>Performance</h4>
-                <p>built from scratch for performance, katallassos is capable of minimal latency and +10k tx/s</p>
+                <p>Built from scratch for performance, katallassos is capable of minimal latency and +10k tx/s.</p>
               </span>
             </div>
             <div class="col-md-6 content--benefit-block p-sm-3 p-2 py-sm-4 px-md-5">
               <i class="fi flaticon-cryptocurrency"></i>
               <span>
                 <h4>Longevity</h4>
-                <p>an extremely flexible and easily upgradable blockchain means we will always use state-of-the-art technology</p>
+                <p>An extremely flexible and easily upgradable blockchain means we will always use state-of-the-art technology.</p>
               </span>
             </div>
           </div>
@@ -276,7 +299,90 @@
     </div>
   </section>
 
+ <section class="katallassos-support">
+ <a name="partners"></a>
+    <div class="container">
+      <div class="row content--support p-md-5 p-sm-5 p-2">
+        <div class="col-md-12 text-center pt-0 px-md-5 px-sm-3 px-2 pb-5">
+          <h3 class="section-title">Partners</h3>
+        </div>
+        <div class="col-md-12 b-top b-bottom text-center">
+          <ul class="content--support-list d-flex mx-auto justify-content-center py-md-5 py-sm-3 py-3">
+            <li class="flex-fill">
+              <a href="https://polkadot.network/">
+                <img src="dist/img/polkadot.png">
+              </a>
+            </li>
+            <li class="flex-fill">
+              <a href="https://chain.link/">
+                <img src="dist/img/chainlink.png">
+              </a>
+            </li>
+            <li class="flex-fill">
+              <a href="https://www.swisscryptotokens.ch/">
+                <img src="dist/img/logosct.png">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="katallassos-whitepaper">
+  <a name="papers"></a>
+    <div class="container">
+      <div class="row content--whitepaper p-md-5 p-sm-4 py-5 px-2 px-sm-0">
+        <div class="col-md-12 text-center pt-0 px-md-5 px-sm-3 px-2 pb-5">
+          <h3 class="section-title">Papers</h3>
+          <div class="row py-5">
+            <div class="col-md-4 mb-md-0 mb-sm-0 mb-3">
+              <a href="papers/Katallassos.pdf">
+                <div class="whitepaper-button py-4 px-3">
+                  <span class="whitepaper-icon">
+                    <i class="fi flaticon-text-documents"></i>
+                  </span>
+                  <span class="whitepaper-title">
+                    <h5>Katallassos: A standard framework for finance</h5>
+                    <p>Coming soon</p> <!–– previous sentence was 'Last update Feb 2019' ––>
+                  </span>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 mb-md-0 mb-sm-0 mb-3">
+              <a href="#">
+                <div class="whitepaper-button py-4 px-3">
+                  <span class="whitepaper-icon">
+                    <i class="fi flaticon-text-documents"></i>
+                  </span>
+                  <span class="whitepaper-title">
+                    <h5>Albatross: An optimistic consensus algorithm</h5>
+                    <p>Coming soon</p>
+                  </span>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4 mb-md-0 mb-sm-0 mb-3">
+              <a href="#">
+                <div class="whitepaper-button py-4 px-3">
+                  <span class="whitepaper-icon">
+                    <i class="fi flaticon-text-documents"></i>
+                  </span>
+                  <span class="whitepaper-title">
+                    <h5>Enso: A general-purpose virtual machine</h5>
+                    <p>Coming soon</p>
+                  </span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="katallassos-team pb-5">
+  <a name="team"></a>
     <div class="container">
       <div class="row py-5">
         <div class="col-md-10 offset-md-1">
@@ -304,7 +410,7 @@
               <img src="dist/img/bruno-2.png">
               <h3 class="team-profile--name">Bruno França</h3>
               <p class="team-profile--title">CRO</p>
-              <p class="team-profile--desc mb-3" id="team-profile--desc">Bruno França is an experienced researcher and mathematician based in Porto, Portugal whose research publications Account Tree and Homomorphic Mini Blockchain.</p>
+              <p class="team-profile--desc mb-3" id="team-profile--desc">Bruno França is an experienced researcher and mathematician based in Porto, Portugal whose research publications include <i>'Privacy and pruning in the Mini-blockchain'</i> and <i>'Homomorphic Mini-blockchain'</i>.</p>
               <a href="#" id="team-profile--link" class="team-profile--link">Read More Bio</a>
             </div>
           </div>
@@ -343,6 +449,7 @@
   </section>
 
   <section class="katallassos-press-roadmap">
+    <a name="company"></a>
     <div class="container">
       <div class="row">
         <div class="col-md-12 pb-5 pt-5">
@@ -389,7 +496,7 @@
             <a href="https://twitter.com/katallassos">TWITTER</a>
           </li>
           <li class="list-inline-item">
-            <a href="https://discord.gg/BBf89e">DISCORD</a>
+            <a href="https://discord.gg/7Ed4svp">DISCORD</a>
           </li>
         </ul>
       </div>
