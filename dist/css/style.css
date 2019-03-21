@@ -115,10 +115,12 @@ p {
   text-transform: uppercase;
   background: transparent;
   color: #ffffff !important;
-  border: 1px solid #a9fff6; }
+  border: 1px solid #ffffff;
+  border-radius: 0px;}
   .btn-outline-main:hover {
-    border: 1px solid #76fff1 !important;
-    color: #e6e6e6 !important; }
+    border: 1px solid #ffffff !important;
+    color: #000000 !important;
+    background: #ffffff;}
   .btn-outline-main:active:focus {
     outline: none; }
   .btn-outline-main:focus {
@@ -130,7 +132,7 @@ html, body {
   min-height: 100%;
   margin: 0;
   padding: 0;
-  background: #131929; }
+  background: #0c0c0c; }
 
 ul {
   list-style: none;
@@ -155,19 +157,23 @@ p {
   font-size: 48px;
   font-weight: 300;
   letter-spacing: 2px;
-  color: #ffffff;
+  color: #000000;
   line-height: 58px; }
+
+.t-white{
+  color: #ffffff;
+}
 
 .section-title-small {
   font-family: proxima-nova, sans-serif;
   letter-spacing: 1px;
-  color: #5e6a9c;
+  color: #AFAFAF;
   text-transform: uppercase;
   font-size: 24px;
   font-weight: 400 !important; }
 
 .section-title-desc {
-  color: #5e6a9c;
+  color: #565656;
   font-weight: 400;
   line-height: normal;
   font-size: 22px;
@@ -180,7 +186,7 @@ p {
   border-top: 1px solid #ffffff20; }
 
 .katallassos-footer {
-  background: #212846;
+  background: #000000;
   color: #fff; }
   .katallassos-footer .katallassos-footer--menu {
     border-top: 1px solid #1f2848; }
@@ -190,7 +196,7 @@ p {
         color: #fff;
         font-size: 18pt; }
         .katallassos-footer .katallassos-footer--menu .katallassos-footer--menu-list li a:hover {
-          color: #a9fff6; }
+          color: #01e465; }
   .katallassos-footer .katallassos-footer--copyright p {
     color: #ffffff54;
     font-size: 12px; }

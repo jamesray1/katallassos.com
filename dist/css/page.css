@@ -18,7 +18,7 @@
       padding-top: 12px !important;
       line-height: normal; }
       .katallassos-header .katallassos-header--menu .navbar-nav a:hover {
-        color: #a9fff6; }
+        color: #01e465; }
 
 #bgCanvas, #bgUsesCanvas {
   position: absolute;
@@ -33,14 +33,13 @@
 .katallassos-hero {
   min-height: 800px;
   padding-top: 200px;
-  background: #131929;
-  background: -moz-linear-gradient(left, #131929 0%, #2a335a 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, #131929), color-stop(100%, #2a335a));
-  background: -webkit-linear-gradient(left, #131929 0%, #2a335a 100%);
-  background: -o-linear-gradient(left, #131929 0%, #2a335a 100%);
-  background: -ms-linear-gradient(left, #131929 0%, #2a335a 100%);
-  background: linear-gradient(to right, #131929 0%, #2a335a 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131929', endColorstr='#2a335a', GradientType=1 );
+  /* background: rgb(27,27,27);
+  background: -moz-linear-gradient(180deg, rgba(27,27,27,1) 0%, rgba(0,0,0,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(27,27,27,1) 0%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(180deg, rgba(27,27,27,1) 0%, rgba(0,0,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1b1b1b",endColorstr="#000000",GradientType=1); */
+
+  background: url(../img/bg-img.png) bottom right no-repeat;
   text-align: center;
   position: relative; }
   .katallassos-hero .hero-meteor {
@@ -76,13 +75,20 @@
     font-size: 55px;
     line-height: normal; }
     .katallassos-hero .hero-title span {
-      color: #a9fff6; }
+      color: #01e465; }
   .katallassos-hero .hero-subtitle {
-    color: #c2d5e8;
+    color: #AFAFAF;
     font-size: 22px;
     line-height: 1.5;
     text-align: left;
     max-width: 70%; }
+
+.link-desc{
+  color: #ffffff;
+}
+.link-desc:hover{
+  color: #01e465;
+}
 
 .katallassos-hero-team {
   min-height: 400px;
@@ -106,7 +112,7 @@
     line-height: 1.5; }
 
 .katallassos-team {
-  background: #131929; }
+  background: #F4F6F9; }
   .katallassos-team .team-header {
     color: #394575;
     font-family: proxima-nova, sans-serif;
@@ -121,22 +127,24 @@
     .katallassos-team .team-profile .team-profile--name {
       text-align: left;
       font-family: franklin-gothic-urw-comp, sans-serif;
-      color: #a9fff6;
+      color: #000000;
       text-transform: uppercase;
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      font-size: 30px;
+      font-weight: 300; }
     .katallassos-team .team-profile .team-profile--title {
       text-align: left;
       font-family: franklin-gothic-urw-comp, sans-serif;
-      color: #fff;
-      font-size: 18px; }
+      color: #565656;
+      font-size: 22px; }
     .katallassos-team .team-profile .team-profile--desc {
       text-align: left;
-      color: #c2d5e8;
-      height: 100px;
-      max-height: 100px;
+      color: #AFAFAF;
+      height: 135px;
+      max-height: 135px;
       line-height: 1.5;
       text-overflow: ellipsis;
-      font-size: 16px;
+      font-size: 18px;
       overflow-y: hidden;
       transition: max-height 0.7s linear; }
       .katallassos-team .team-profile .team-profile--desc.expanded {
@@ -145,8 +153,8 @@
         transition: max-height 0.7s linear; }
     .katallassos-team .team-profile .team-profile--link {
       float: left;
-      color: #505e72;
-      font-size: 14px;
+      color: #01e465;
+      font-size: 16px;
       text-decoration: underline; }
       .katallassos-team .team-profile .team-profile--link:hover {
         color: #72849c; }
@@ -155,18 +163,19 @@
   z-index: 9999; }
 
 .katallassos-tab {
-  background: #131929; }
+  background: #F4F6F9; }
   .katallassos-tab .katallassos-tab--nav {
     width: 100%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
     border-bottom: 0; }
     .katallassos-tab .katallassos-tab--nav .nav-item {
-      background: #222a48; }
+      background: #ffffff;}
     .katallassos-tab .katallassos-tab--nav .nav-item > .nav-link {
       width: 100%;
       border: 0;
       border-radius: 0; }
       .katallassos-tab .katallassos-tab--nav .nav-item > .nav-link i {
-        color: #5e6a9c;
+        color: #AFAFAF;
         font-size: 60px;
         vertical-align: middle; }
       .katallassos-tab .katallassos-tab--nav .nav-item > .nav-link span {
@@ -180,28 +189,31 @@
           font-size: 30px;
           letter-spacing: 3px;
           font-weight: 400 !important;
-          color: #5e6a9c;
+          color: #AFAFAF;
           margin-bottom: 5px; }
         .katallassos-tab .katallassos-tab--nav .nav-item > .nav-link span p {
-          color: #5e6a9c;
+          color: #AFAFAF;
           margin-bottom: 0;
           letter-spacing: 2px;
           font-size: 20px; }
     .katallassos-tab .katallassos-tab--nav .nav-item > .nav-link.active {
-      background: #131929; }
+      background: #ffffff;
+      border-bottom: solid 3px #01e465;
+      border-right: 1px solid #ececec;
+      border-left: 1px solid #ececec;}
       .katallassos-tab .katallassos-tab--nav .nav-item > .nav-link.active i {
-        color: #a9fff6; }
+        color: #01e465; }
       .katallassos-tab .katallassos-tab--nav .nav-item > .nav-link.active span {
         color: #a9fff6; }
         .katallassos-tab .katallassos-tab--nav .nav-item > .nav-link.active span h5 {
-          color: #ffffff; }
+          color: #000000; }
         .katallassos-tab .katallassos-tab--nav .nav-item > .nav-link.active span p {
-          color: #ffffff; }
+          color: #565656; }
     .katallassos-tab .katallassos-tab--nav .katallassos-tab--nav-developer a.nav-link {
       text-align: right;
       padding-right: 150px; }
   .katallassos-tab .katallassos-tab--content .katallassos-tab--benefit-wrapper .content--benefit .content--benefit-block i {
-    color: #a9fff6;
+    color: #01e465;
     font-size: 85px;
     display: table-cell;
     vertical-align: top;
@@ -212,25 +224,22 @@
     vertical-align: middle; }
     .katallassos-tab .katallassos-tab--content .katallassos-tab--benefit-wrapper .content--benefit .content--benefit-block span h4 {
       font-family: franklin-gothic-urw-comp, sans-serif;
-      color: #a9fff6;
+      color: #000000;
       font-size: 32px;
       font-weight: 400;
       letter-spacing: 2px;
       text-transform: uppercase; }
     .katallassos-tab .katallassos-tab--content .katallassos-tab--benefit-wrapper .content--benefit .content--benefit-block span p {
-      color: #c2d5e8;
+      color: #AFAFAF;
       line-height: 1.5;
       font-size: 18px; }
 
 .katallassos-support {
-  background: #131929;
-  background: -moz-linear-gradient(top, #131929 0%, #1b2234 58%, #1b2234 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, #131929), color-stop(58%, #1b2234), color-stop(100%, #1b2234));
-  background: -webkit-linear-gradient(top, #131929 0%, #1b2234 58%, #1b2234 100%);
-  background: -o-linear-gradient(top, #131929 0%, #1b2234 58%, #1b2234 100%);
-  background: -ms-linear-gradient(top, #131929 0%, #1b2234 58%, #1b2234 100%);
-  background: linear-gradient(to bottom, #131929 0%, #1b2234 58%, #1b2234 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131929', endColorstr='#1b2234', GradientType=0 ); }
+  background: rgb(27,27,27);
+  background: -moz-linear-gradient(180deg, rgba(27,27,27,1) 0%, rgba(0,0,0,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(27,27,27,1) 0%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(180deg, rgba(27,27,27,1) 0%, rgba(0,0,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1b1b1b",endColorstr="#000000",GradientType=1); }
   .katallassos-support .content--support .content--support-list li {
     padding: 10px; }
     .katallassos-support .content--support .content--support-list li img {
@@ -239,7 +248,7 @@
       object-fit: contain; }
 
 .katallassos-whitepaper {
-  background: #1b2234; }
+  background: #000000; }
   .katallassos-whitepaper .content--whitepaper h6 {
     color: #c2d5e8;
     text-transform: uppercase;
@@ -263,7 +272,7 @@
           border-radius: 100%;
           border: 1px solid #cccccc;
           background: #fbfbfb;
-          color: #5e6a9c;
+          color: #01e465;
           height: 60px; }
       .katallassos-whitepaper .content--whitepaper .whitepaper-button span.whitepaper-title {
         padding-left: 15px;
@@ -280,7 +289,7 @@
           font-size: 14px; }
 
 .katallassos-uses {
-  background: #131929;
+  background: #ffffff;
   padding-top: 130px !important;
   padding-bottom: 130px !important;
   position: relative; }
@@ -298,7 +307,7 @@
     z-index: 999; }
     .katallassos-uses .katallassos-uses--card .card {
       border: 0;
-      border-bottom: 1px solid #505e72 !important;
+      border-bottom: 1px solid #AFAFAF !important;
       background: none;
       border-radius: 0; }
       .katallassos-uses .katallassos-uses--card .card .card-header {
@@ -314,21 +323,21 @@
           text-transform: uppercase;
           font-weight: 400 !important;
           letter-spacing: 2px;
-          color: #a9fff6;
+          color: #01e465;
           padding: 0;
           line-height: normal; }
           .katallassos-uses .katallassos-uses--card .card .card-header .uses-card--button:hover {
             cursor: pointer;
-            color: #5dffee; }
+            color: #01e465; }
           .katallassos-uses .katallassos-uses--card .card .card-header .uses-card--button:focus {
             outline: none; }
           .katallassos-uses .katallassos-uses--card .card .card-header .uses-card--button.collapsed {
-            color: #c2d5e8; }
+            color: #AFAFAF; }
         .katallassos-uses .katallassos-uses--card .card .card-header .uses-card--icon {
           background: none;
           border: 0;
           font-size: 24px;
-          color: #a9fff6;
+          color: #01e465;
           padding: 0;
           padding-top: 15px;
           line-height: 1; }
@@ -344,17 +353,23 @@
             color: #cfcfcf; }
       .katallassos-uses .katallassos-uses--card .card .card-body {
         font-size: 18px;
-        color: #c2d5e8; }
+        color: #AFAFAF; }
+
+p.about-desc{
+  color: #565656;
+  font-weight: 400;
+  font-size: 18px;
+}
 
 .katallassos-press-roadmap {
-  background: #131929;
-  background: -moz-linear-gradient(top, #131929 0%, #2a335a 100%);
+  background: #ffffff;
+  /* background: -moz-linear-gradient(top, #131929 0%, #2a335a 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, #131929), color-stop(100%, #2a335a));
   background: -webkit-linear-gradient(top, #131929 0%, #2a335a 100%);
   background: -o-linear-gradient(top, #131929 0%, #2a335a 100%);
   background: -ms-linear-gradient(top, #131929 0%, #2a335a 100%);
   background: linear-gradient(to bottom, #131929 0%, #2a335a 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131929', endColorstr='#2a335a', GradientType=0 ); }
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131929', endColorstr='#2a335a', GradientType=0 ); } */
   .katallassos-press-roadmap .section-title {
     padding-top: 80px; }
   .katallassos-press-roadmap .katallassos-press .katallassos-press--list li {
@@ -535,6 +550,7 @@
         border-radius: 50%;
         border: 3px solid #dfdfdf;
         background-color: #dfdfdf; }
+
   .katallassos-press-roadmap .katallassos-roadmap--product .trinkler-products-desc {
     color: #cccbe4;
     font-weight: 400;
@@ -568,6 +584,7 @@
         margin-bottom: 0;
         font-weight: 500;
         font-size: 14px; }
+
 
 @media (max-width: 575.98px) {
   .katallassos-header {
